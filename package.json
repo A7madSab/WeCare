@@ -17,7 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "serve": "git add -A && git commit -m `Tweeks` && git push && heroku logs -tail -a ",
+    "serve": "git add -A && git commit -m 'Tweeks' && git push && heroku logs -tail -a we-care-o && heroku open",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

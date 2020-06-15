@@ -38,11 +38,9 @@ const runDetection = () => {
         model.renderPredictions(predictions, canvas, context, video)
         if (predictions.length) {
             if (predictions[0].bbox[1] > predictions[0].bbox[3]) {
-                console.log("side")
                 window.scrollBy(0, 15)
             }
             else {
-                console.log("front")
                 window.scrollBy(0, -15)
             }
         }
