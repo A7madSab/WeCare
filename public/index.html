@@ -46,11 +46,40 @@
     .checked {
       color: orange;
     }
+
+    .p20 {
+      padding: 20px;
+    }
+
+    .canvasbox {
+      border-radius: 3px;
+      margin-right: 10px;
+      width: 150px;
+      height: 113px;
+      border-bottom: 3px solid #0063FF;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 #00000030;
+      background: #333;
+    }
+
+    .updatenote {
+      padding: 10px;
+      background: rgb(245, 147, 20);
+      color: white;
+      display: inline;
+    }
   </style>
 </head>
 
 <body>
   <div id="root"></div>
+  <div style="position:fixed; bottom: 0; right: 0;display: flex; flex-direction: column; justify-content: center;">
+    <button id="trackbutton" onclick="toggleVideo()"
+      style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); border-radius: 8px; padding: 10px 24px; background-color: #4CAF50; border: none;">
+      Toggle Gesture Navigation
+    </button>
+    <video id="myvideo" hidden autoplay="autoplay"></video>
+    <canvas id="canvas" class="border canvasbox"></canvas>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -61,6 +90,10 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"> </script>
+  <script src="track.js"></script>
 </body>
 
 </html>
