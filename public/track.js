@@ -25,8 +25,10 @@ const startVideo = () => {
 const toggleVideo = () => {
     if (!isVideo) {
         startVideo()
+        canvas.style.display = "block"
     } else {
         handTrack.stopVideo(video)
+        canvas.style.display = "none"
         isVideo = false
     }
 }
@@ -43,7 +45,7 @@ const runDetection = () => {
                 console.log("front")
                 window.scrollBy(0, -15)
             }
-    }
+        }
         if (isVideo) {
             requestAnimationFrame(runDetection)
         }

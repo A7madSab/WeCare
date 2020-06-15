@@ -215,26 +215,26 @@ const App = () => {
 
         <div className="container" style={{ marginTop: 35, marginBottom: 35, padding: 35, borderRadius: 34 }}>
           <div className="row">
-            <div className="col-3">
+            <div className="col-6 col-md-3">
               <h5>About Us</h5>
               <p>Privacy and policy</p>
               <p>Our Customer</p>
               <p>Blog Post</p>
               <p>Help & Support</p>
             </div>
-            <div className="col-3">
+            <div className="col-6 col-md-3">
               <h5>About Us</h5>
               <p>Our clients</p>
               <p>Legal notic</p>
             </div>
-            <div className="col-3">
+            <div className="col-6 col-md-3">
               <h5>Help & Advice</h5>
               <p>Help Center</p>
               <p>Contact Support</p>
               <p>Instructions</p>
               <p>Some Question</p>
             </div>
-            <div className="col-3">
+            <div className="col-6 col-md-3">
               <Rate count={5} />
               <p>10,000 Trust people The full-stack design team who focuses on digital products whatever they are.</p>
 

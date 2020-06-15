@@ -1,5 +1,5 @@
 {
-  "name": "we-care",
+  "name": "we-care-o",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,6 +17,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "serve": "git add -A && git commit -m `Tweeks` && git push && heroku logs -tail -a ",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

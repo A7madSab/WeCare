@@ -10,77 +10,36 @@
     content="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters," />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./styles.css">
   <script src="https://kit.fontawesome.com/a9dde10f0a.js" crossorigin="anonymous"></script>
 
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <title>We Care</title>
 
   <style>
-    * {
-      font-family: Roboto;
-    }
-
     #root {
       background-image: url(/imgs/baby-foot.png);
       background-repeat: no-repeat;
       background-size: 800px;
       background-position: top right;
     }
-
-    .hr {
-      height: 5px;
-      background: linear-gradient(to right, white, #7CC576);
-      border: none;
-      width: 40%;
-      border-radius: 100px;
-    }
-
-    .titleHr {
-      height: 5px;
-      background: linear-gradient(to right, white, #7CC576);
-      border: none;
-      width: 20%;
-      border-radius: 100px;
-    }
-
-    .checked {
-      color: orange;
-    }
-
-    .p20 {
-      padding: 20px;
-    }
-
-    .canvasbox {
-      border-radius: 3px;
-      margin-right: 10px;
-      width: 150px;
-      height: 113px;
-      border-bottom: 3px solid #0063FF;
-      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 #00000030;
-      background: #333;
-    }
-
-    .updatenote {
-      padding: 10px;
-      background: rgb(245, 147, 20);
-      color: white;
-      display: inline;
-    }
   </style>
 </head>
 
 <body>
+  <!-- Reactjs -->
   <div id="root"></div>
+
+  <!-- Gesture Navigation  -->
   <div style="position:fixed; bottom: 0; right: 0;display: flex; flex-direction: column; justify-content: center;">
-    <button id="trackbutton" onclick="toggleVideo()"
-      style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); border-radius: 8px; padding: 10px 24px; background-color: #4CAF50; border: none;">
-      Toggle Gesture Navigation
+    <button id="trackbutton" onclick="toggleVideo()" class="buttonG">
+      Gesture Navigation
     </button>
     <video id="myvideo" hidden autoplay="autoplay"></video>
-    <canvas id="canvas" class="border canvasbox"></canvas>
+    <canvas id="canvas" style="display:none" class="border canvasbox"></canvas>
   </div>
 
+  <!-- Bootstrap js Library -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -91,6 +50,7 @@
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
 
+  <!-- Gesture Navigation Library -->
   <script src="https://unpkg.com/carbon-components@latest/scripts/carbon-components.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"> </script>
   <script src="track.js"></script>

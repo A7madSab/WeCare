@@ -1,0 +1,55 @@
+* {
+    font-family: Roboto;
+  }
+
+  .hr {
+    height: 5px;
+    background: linear-gradient(to right, white, #7CC576);
+    border: none;
+    width: 40%;
+    border-radius: 100px;
+  }
+
+  .titleHr {
+    height: 5px;
+    background: linear-gradient(to right, white, #7CC576);
+    border: none;
+    width: 20%;
+    border-radius: 100px;
+  }
+
+  .checked {
+    color: orange;
+  }
+
+  .p20 {
+    padding: 20px;
+  }
+
+  .canvasbox {
+    border-radius: 3px;
+    margin-right: 10px;
+    width: 150px;
+    height: 113px;
+    border-bottom: 3px solid #0063FF;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 #00000030;
+    background: #333;
+  }
+
+  .updatenote {
+    padding: 10px;
+    background: rgb(245, 147, 20);
+    color: white;
+    display: inline;
+  }
+
+  .buttonG {
+    width: 150px;
+    font-size: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+    border: none;
+    padding: 10px 24px;
+    background-color: #4CAF50;
+    border: none;
+  }
