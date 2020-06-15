@@ -17,6 +17,7 @@ const App = () => {
     <>
       <div className="container">
 
+
         {/* NavBar */}
         <nav className="navbar navbar-expand-lg navbar-light ">
           <Link to="Home" spy={true} smooth={true} duration={250} offset={-50} className="nav-link" >
@@ -39,11 +40,11 @@ const App = () => {
         </nav>
 
 
+
         {/* Home Section */}
-        {/* <Element name="Home"> */}
-        <div className="container" style={{ paddingTop: 70 }}>
+        <div className="container" style={{ paddingTop: 70, }}>
           <div className="row">
-            <div className="col-6">
+            <div className="col-12 col-md-6">
               <span style={{ fontSize: 26 }}>
                 <span style={{ color: lightGrey }}>Welcome </span>
                 <WeCare size={26} />
@@ -59,96 +60,120 @@ const App = () => {
             </div>
           </div>
         </div>
-        {/* </Element> */}
 
 
-        {/* About Section */}
-        {/* <Element name="About"> */}
+        <br />
+        <br />
+        <br />
+
+
+        {/* Best Deals Section */}
         <div className="container">
           <p style={{ color: grey, fontSize: 45, textAlign: "center" }}>Best Deals</p>
           <p style={{ color: lightGrey, textAlign: "center" }}>A newborn baby can feel small and fragile. Learn how to care for your newborn and find out what</p>
           <hr className="titleHr" />
           <div className="d-flex justify-content-between">
-            <DealCard img="baby-chair.png" title="Mee Mee Baby Stroller" />
-            <DealCard img="baby-blanket.png" title="Hooded Blanket Cum" />
-            <DealCard img="baby-shampoo.png" title="Gentle Baby Bath" />
+            <div className="row">
+              <div className="col-12 col-md-4">
+                <DealCard img="baby-chair.png" title="Mee Mee Baby Stroller" />
+              </div>
+              <div className="col-12 col-md-4">
+                <DealCard img="baby-blanket.png" title="Hooded Blanket Cum" />
+              </div>
+              <div className="col-12 col-md-4">
+                <DealCard img="baby-shampoo.png" title="Gentle Baby Bath" />
+              </div>
+            </div>
           </div>
         </div>
-        {/* </Element> */}
 
 
-        {/* <Element name="Service"> */}
-        <div className="container">
+        {/* Care Section */}
+        <div className="container" style={{ marginTop: 35, marginBottom: 35 }}>
           <p style={{ color: grey, fontSize: 45, textAlign: "center" }}>Newborn Care</p>
           <p style={{ color: lightGrey, textAlign: "center" }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer turpis risus, rutrum imperdiet finibus in, iaculis eu leo. Duis vitae turpis augue.</p>
           <hr className="titleHr" />
           <div className="d-flex justify-content-between">
-            <Care img="cloth.png" title="Clothing" subtitle="Lorem ipsum dolor sit amet" />
-            <Care img="feeding.png" title="Feeding" subtitle="Lorem ipsum dolor sit amet" />
-            <Care img="bedtime.png" title="Bedtime" subtitle="Lorem ipsum dolor sit amet" />
+            <div className="row">
+
+              <div className="col-12 col-md-4">
+                <Care img="cloth.png" title="Clothing" subtitle="Lorem ipsum dolor sit amet" />
+              </div>
+
+              <div className="col-12 col-md-4">
+                <Care img="feeding.png" title="Feeding" subtitle="Lorem ipsum dolor sit amet" />
+              </div>
+
+              <div className="col-12 col-md-4">
+                <Care img="bedtime.png" title="Bedtime" subtitle="Lorem ipsum dolor sit amet" />
+              </div>
+
+            </div>
           </div>
         </div>
-        {/* </Element> */}
-      </div >
+      </div>
 
-      <div>
-        {/* <Element name="Pricing"> */}
+
+      {/* Baby Carrier Section */}
+      <div style={{ marginBottom: 35 }}>
         <div className="container-fluid">
           <div className="row">
-            <div className="col-6" style={{ padding: 0, margin: 0 }}>
+
+            <div className="col-12 col-md-6" style={{ padding: 0, margin: 0 }}>
               <img alt="mother carrying baby" src="/imgs/mother-carrying-baby.png" width="100%" style={{ padding: 0, marginRight: 0 }} />
             </div>
-            <div className="col-6" style={{ display: "flex", justifyContent: "center", flexDirection: "column" }}>
+            <div className="col-12 col-md-6" style={{ display: "flex", justifyContent: "center", flexDirection: "column" }}>
               <h1 style={{ padding: "15px", color: grey }}>Baby Carrier One Air</h1>
               <p style={{ padding: "15px", color: grey }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer turpis risus, rutrum imperdiet finibus in, iaculis eu leo. Duis vitae turpis augue.</p>
               <h1 style={{ padding: "15px", color: green }}>Price <strong>$219.99</strong></h1>
 
-              <button className="btn btn-success" style={{ backgroundColor: green, border: "none", width: "55%" }}>
-                Learn More <ArrowRightIcon size={24} />
+              <button className="btn btn-success" style={{ backgroundColor: green, border: "none", width: "55%", boxShadow: '5px 5px 10px #C8C8C8' }}>
+                View Details <ArrowRightIcon size={24} />
               </button>
 
             </div>
           </div>
         </div>
-        {/* </Element> */}
 
-        {/* <Element name="About"> */}
-        <div className="container" style={{ paddingTop: 35, paddingBottom: 35 }}>
+
+        {/* Article Section */}
+        <div className="container" style={{ marginTop: 35, marginBottom: 35, }}>
           <p style={{ color: grey, fontSize: 45, textAlign: "center" }}>BabyCare Articles</p>
           <p style={{ color: lightGrey, textAlign: "center" }}>A newborn baby can feel small and fragile. Learn how to care for your newborn and find out what</p>
           <hr className="titleHr" />
 
           <div className="d-flex justify-content-between">
-            <Articles img="10.png" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer turpis risus, rutrum imperdiet finibus in, iaculis eu leo. Duis vitae turpis augue. Sed ullamcorper faucibus volutpat. Fusce faucibus euismod auctor." auther="By Olivia - May 28, 2019" title="Congratulations! You've got a new member of your family." />
-            <Articles img="11.png" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer turpis risus, rutrum imperdiet finibus in, iaculis eu leo. Duis vitae turpis augue. Sed ullamcorper faucibus volutpat. Fusce faucibus euismod auctor." auther="By Olivia - May 28, 2019" title="Changing diapers frequently is an important aspect" />
-            <Articles img="12.png" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer turpis risus, rutrum imperdiet finibus in, iaculis eu leo. Duis vitae turpis augue. Sed ullamcorper faucibus volutpat. Fusce faucibus euismod auctor." auther="By Olivia - May 28, 2019" title="Here’s How You Can Get Your Kids to Eat Whole Grains" />
+            <div className="row">
+              <div className="col-12 col-md-4">
+                <Articles img="10.png" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer turpis risus, rutrum imperdiet finibus in, iaculis eu leo. Duis vitae turpis augue. Sed ullamcorper faucibus volutpat. Fusce faucibus euismod auctor." auther="By Olivia - May 28, 2019" title="Congratulations! You've got a new member of your family." />
+              </div>
+              <div className="col-12 col-md-4">
+                <Articles img="11.png" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer turpis risus, rutrum imperdiet finibus in, iaculis eu leo. Duis vitae turpis augue. Sed ullamcorper faucibus volutpat. Fusce faucibus euismod auctor." auther="By Olivia - May 28, 2019" title="Changing diapers frequently is an important aspect" />
+              </div>
+              <div className="col-12 col-md-4">
+                <Articles img="12.png" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer turpis risus, rutrum imperdiet finibus in, iaculis eu leo. Duis vitae turpis augue. Sed ullamcorper faucibus volutpat. Fusce faucibus euismod auctor." auther="By Olivia - May 28, 2019" title="Here’s How You Can Get Your Kids to Eat Whole Grains" />
+              </div>
+            </div>
           </div>
-
-
           <div className="text-center">
-            <button className="btn" style={{ backgroundColor: lightGrey }}>All Posts</button>
+            <button className="btn" style={{ backgroundColor: "#F2F9F1", }}>All Posts</button>
           </div>
         </div>
-        {/* </Element> */}
 
-        {/* <Element name="About"> */}
+        {/* Baby Boss section */}
         <div className="container-fluid text-center" style={{ padding: 35, backgroundColor: green, backgroundImage: "url(/imgs/baby-boss.png)", backgroundPosition: "right", backgroundRepeat: "no-repeat", backgroundSize: "contain" }}>
           <hr className="titleHr" />
-
           <div className="container">
             <h1 style={{ color: "white", fontSize: 40, paddingLeft: 20, paddingRight: 20, fontWeight: 200 }}>  Since 2002, Baby Care Advice has assisted thousands of parentsworldwide solve minor and complex baby care problems by our articles and consultations.</h1>
             <h2 style={{ color: "white", fontSize: 40, paddingLeft: 20, paddingRight: 20, fontWeight: "bold" }}>  Book a consultation now!</h2>
           </div>
-
         </div>
-        {/* </Element> */}
 
-        <div className="container">
+        {/* Review section */}
+        <div className="container" style={{ marginTop: 35, marginBottom: 35, }}>
           <p style={{ color: grey, fontSize: 45, textAlign: "center" }}>Customer Reviews</p>
           <p style={{ color: lightGrey, textAlign: "center" }}>A newborn baby can feel small and fragile. Learn how to care for your newborn and find out what</p>
           <hr className="titleHr" />
-
-
           <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
             <div className="carousel-inner" style={{ paddingLeft: 90 }}>
               <div className="carousel-item active">
@@ -166,31 +191,29 @@ const App = () => {
                 </div>
               </div>
             </div>
-
-
             <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="next">
               <button className="btn btn-light text-center" style={{ height: "40px", width: "40px", borderRadius: "100%" }}>
                 <i className="fas fa-arrow-left" style={{ color: "black" }} />
               </button>
               <span className="sr-only">Previous</span>
             </a>
-
           </div>
         </div>
 
-        <div className="container" style={{ padding: 35, backgroundColor: green, borderRadius: 34 }}>
+        {/* Green Section */}
+        <div className="container" style={{ marginTop: 35, marginBottom: 35, padding: 35, backgroundColor: green, borderRadius: 34, boxShadow: '0px 0px 10px 0px #C8C8C8' }}>
           <div className="row">
-            <div className="col-7">
+            <div className="col-12 col-md-7">
               <h1 style={{ color: "white", fontSize: 40, paddingLeft: 20, paddingRight: 20, fontWeight: 200 }}>Sign up for our newsletter </h1>
               <h2 style={{ color: "white", fontSize: 40, paddingLeft: 20, paddingRight: 20, fontWeight: "bold" }}>Newborn Baby</h2>
             </div>
-            <div className="col-5 text-center align-middle">
+            <div className="col-12 col-md-5 text-center align-middle">
               <button className="btn btn-secondary" style={{ paddingLeft: 25, paddingRight: 25 }}>Getting Started <ArrowRightIcon size={24} /></button>
             </div>
           </div>
         </div>
 
-        <div className="container" style={{ padding: 35, borderRadius: 34 }}>
+        <div className="container" style={{ marginTop: 35, marginBottom: 35, padding: 35, borderRadius: 34 }}>
           <div className="row">
             <div className="col-3">
               <h5>About Us</h5>

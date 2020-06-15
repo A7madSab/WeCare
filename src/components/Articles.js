@@ -4,7 +4,7 @@ import { darkGrey, green, grey } from "../utils/color"
 
 const Articles = ({ img, title, auther, body }) => {
     return (
-        <div className="card" style={{ width: "20rem", margin: "15px", border: "none", borderRadius: 34 }}>
+        <div className="card" style={{ margin: "15px", border: "none", borderRadius: 34, boxShadow: '0px 0px 10px #C8C8C8' }}>
             <img alt="articl" src={`/imgs/${img}`} className="card-img-top" style={{ borderTopLeftRadius: 34, borderTopRightRadius: 34 }} />
 
             <div className="card-body">

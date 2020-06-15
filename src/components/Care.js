@@ -2,7 +2,7 @@ import React from "react"
 import { green, grey } from "../utils/color"
 
 const Care = ({ img, title, subtitle }) => (
-    <div className="card" style={{ width: "16rem", margin: "15px", border: "none", borderRadius: 34 }}>
+    <div className="card" style={{ margin: "15px", border: "none", borderRadius: 34 }}>
         <img alt="Care" src={`/imgs/${img}`} className="card-img-top" />
 
         <div className="card-body">
