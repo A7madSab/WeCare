@@ -1,0 +1,5 @@
+export const lightGrey = "#B0B0B0"
+export const offWhite = "#C8E7C5"
+export const green = "#7CC576"
+export const grey = "#707070"
+export const darkGrey = "#5A5454"
