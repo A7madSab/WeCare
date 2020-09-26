@@ -2,13 +2,13 @@ import React from "react"
 import { Link } from "react-scroll"
 import { ArrowRightIcon } from '@primer/octicons-react'
 
-import NavButton from "./components/NavButton"
-import DealCard from "./components/DealCard"
-import Articles from "./components/Articles"
-import Reviews from "./components/Reviews"
-import WeCare from "./components/Wecare"
-import Care from "./components/Care"
 import Rate from "./components/Rate"
+import Care from "./components/Care"
+import WeCare from "./components/Wecare"
+import Reviews from "./components/Reviews"
+import Articles from "./components/Articles"
+import DealCard from "./components/DealCard"
+import NavButton from "./components/NavButton"
 
 import { green, lightGrey, grey } from "./utils/color"
 
@@ -16,7 +16,6 @@ const App = () => {
   return (
     <>
       <div className="container">
-
 
         {/* NavBar */}
         <nav className="navbar navbar-expand-lg navbar-light ">
@@ -39,8 +38,6 @@ const App = () => {
           </div>
         </nav>
 
-
-
         {/* Home Section */}
         <div className="container" style={{ paddingTop: 70, }}>
           <div className="row">
@@ -61,11 +58,9 @@ const App = () => {
           </div>
         </div>
 
-
         <br />
         <br />
         <br />
-
 
         {/* Best Deals Section */}
         <div className="container">
@@ -87,7 +82,6 @@ const App = () => {
           </div>
         </div>
 
-
         {/* Care Section */}
         <div className="container" style={{ marginTop: 35, marginBottom: 35 }}>
           <p style={{ color: grey, fontSize: 45, textAlign: "center" }}>Newborn Care</p>
@@ -95,7 +89,6 @@ const App = () => {
           <hr className="titleHr" />
           <div className="d-flex justify-content-between">
             <div className="row">
-
               <div className="col-12 col-md-4">
                 <Care img="cloth.png" title="Clothing" subtitle="Lorem ipsum dolor sit amet" />
               </div>
@@ -107,12 +100,10 @@ const App = () => {
               <div className="col-12 col-md-4">
                 <Care img="bedtime.png" title="Bedtime" subtitle="Lorem ipsum dolor sit amet" />
               </div>
-
             </div>
           </div>
         </div>
       </div>
-
 
       {/* Baby Carrier Section */}
       <div style={{ marginBottom: 35 }}>
